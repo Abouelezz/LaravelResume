@@ -66,7 +66,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="#">John Doe</a>
+				<a class="brand" href="#">{{{$name}}}</a>
 				<div class="nav-collapse collapse">
 					<ul class="nav">
 						<li><a href="#about-me" class="scroller">About me</a></li>
