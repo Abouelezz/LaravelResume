@@ -14,19 +14,19 @@
 -->
 
 <!-- Bootstrap -->
-<link href="{{{asset('bootstrap/css/bootstrap.min.css')}}}" rel="stylesheet" media="screen">
-<link href="{{{asset('bootstrap/css/bootstrap-responsive.min.css')}}}" rel="stylesheet">
+<link href="{{{asset('bootstrap/css/bootstrap.css')}}}" rel="stylesheet" media="">
+<link href="{{{asset('bootstrap/css/bootstrap-responsive.min.css')}}}" rel="stylesheet" media="screen">
 <script src="{{{asset('bootstrap/js/bootstrap.min.js')}}}"></script>
 
 <!-- Glyphicons -->
-<link href="{{{asset('css/glyphicons.css')}}}" rel="stylesheet" media="screen">
+<link href="{{{asset('css/glyphicons.css')}}}" rel="stylesheet" media="">
 
 <!-- Plugins -->
 <script src="{{{asset('js/jquery.easing.1.3.js')}}}"></script>
 <script src="{{{asset('js/jquery.isotope.min.js')}}}"></script>
 <script src="{{{asset('js/jquery.ba-resize.min.js')}}}"></script>
 
-<link href="{{{asset('css/prettyPhoto.css')}}}" rel="stylesheet" media="screen">
+<link href="{{{asset('css/prettyPhoto.css')}}}" rel="stylesheet" media="">
 <script src="{{{asset('js/jquery.prettyPhoto.js')}}}"></script>
 
 <script src="{{{asset('js/klass.min.js')}}}"></script>
@@ -35,10 +35,10 @@
 
 <!-- Theme -->
 <link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
-<link href="{{{asset('css/style.css')}}}" rel="stylesheet" media="screen">
+<link href="{{{asset('css/style.css')}}}" rel="stylesheet" media="">
 
 <!-- Skin -->
-<link type="text/css" rel="stylesheet/less" href="{{{asset('css/skin.less')}}}" media="screen">
+<link type="text/css" rel="stylesheet/less" href="{{{asset('css/skin.less')}}}" media="">
 <!-- LESS.js -->
 <script src="{{{asset('js/less-1.3.3.min.js')}}}"></script>
 
@@ -58,7 +58,7 @@
 
 <body class="backgrounded" data-spy="scroll" data-target=".sidebar-nav">
 
-	<div class="navbar navbar-inverse navbar-fixed-top visible-phone noprint" id="phone-navbar">
+	<div class="navbar navbar-inverse navbar-fixed-top visible-phone noprint " id="phone-navbar">
 		<div class="navbar-inner">
 			<div class="container">
 				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -121,7 +121,7 @@
 						<div class="span3">
 							<img class="img-rounded" src="./images/portrait.jpg" alt="">
 						</div>
-						<div class="span6">
+						<div class="span6" class="name">
 							<h1>{{{$name}}}</h1><br/>
 							<h2 class="primary-color">{{{$job}}}</h2>
 						</div>
@@ -171,6 +171,19 @@
 						<div class="infoline span9 last"><div class="row">
 							<div class="span2 muted">Lives in</div>
 							<div class="span7">{{{$livesin}}}</div>
+						</div></div>
+						<span class="clear"></span>
+
+						<div class="infoline span9 last"><div class="row">
+							<div class="span2 muted">Mobile Number (Egypt)</div>
+							<div class="span7">{{{$phone_egypt}}}</div>
+						</div></div>
+						<span class="clear"></span>
+
+
+						<div class="infoline span9 last"><div class="row">
+							<div class="span2 muted">Mobile Number (UAE)</div>
+							<div class="span7">{{{$phone_uae}}}</div>
 						</div></div>
 						<span class="clear"></span>
 
@@ -227,16 +240,9 @@
 
 				<div class="section skills" id="skills">
 					<h2 class="section-title"><span class="glyphicons cogwheels"><i></i></span>Skills<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
+					<br />
 					@foreach ($skills as $skill)
-					<div class="row">
-						<div class="span2">{{{$skill->skill}}}</div>
-						<div class="span3">
-							<span class="printonly">Good</span>
-							<div class="progress">
-								<div class="bar" style="width: {{{$skill->rate}}}%;"></div>
-							</div>
-						</div>
-					</div>
+					<span class="label label-info label-big">{{{$skill->skill}}}</span>
 					@endforeach
 
 				</div><!--/section-->
@@ -246,7 +252,7 @@
 					@foreach ($testimonials as $testimonial)
 					<div class="testimonial">
 						<div class="media">
-							@if($testimonial->photo)<img class="media-object pull-left" src="{{{$testimonial->photo}}}" alt="">@endif
+							@if($testimonial->photo)<img style="width:100px;" class="media-object pull-left img-rounded" src="{{{$testimonial->photo}}}" alt="">@endif
 							<div class="media-body">
 								<blockquote>
 									<p>{{{$testimonial->word}}}</p>
@@ -266,20 +272,17 @@
 				<div class="section" id="projects">
 					<h2 class="section-title"><span class="glyphicons comments"><i></i></span>Projects<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
 					@foreach ($projects as $project)
-					<div class="testimonial">
-						<div class="media">
-							<img class="media-object pull-left" src="{{{asset('files/'.$project->photos()[0])}}}" alt="">
-							<div class="media-body">
-								<h2>{{{$project->name}}}</h2>
 
-								<blockquote>
-									<p>{{{$project->descr}}}</p>
+					<div class="row">
+						<div class="span2"><img class="media-object pull-left img-rounded" style="width:150px;" src="{{{asset('files/'.$project->photos()[0])}}}" alt=""></div>
+						<div class="span7">
+							<h2>{{{$project->name}}}</h2>
+							<p>{{{$project->descr}}}</p>
 									<b>Skills Needed:</b> @foreach ($project->skills() as $skill)<span class="label label-info">{{{$skill}}}</span> @endforeach<br />
 									@if($project->url)<b>URL:</b> <a href="{{{$project->url}}}">{{{$project->url}}}</a>@endif
-								</blockquote>
-							</div>
 						</div>
 					</div>
+<hr />
 					@endforeach
 
 				</div><!--/section-->
@@ -372,7 +375,6 @@
 
   ga('create', 'UA-52043013-1', 'ahmedabdellatif.com');
   ga('send', 'pageview');
-
 </script>
 </body>
 </html>

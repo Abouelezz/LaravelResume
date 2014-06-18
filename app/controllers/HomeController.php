@@ -20,6 +20,8 @@ class HomeController extends BaseController {
 		$data['pob'] = CVInfo::key('pob')->value;
 		$data['nationallty'] = CVInfo::key('nationallty')->value;
 		$data['livesin'] = CVInfo::key('livesin')->value;
+		$data['phone_egypt'] = CVInfo::key('phone_egypt')->value;
+		$data['phone_uae'] = CVInfo::key('phone_uae')->value;
 
 		$data['employment'] = Employment::orderBy('item_order','DESC')->get();
 		$data['education'] = Education::orderBy('item_order','DESC')->get();
