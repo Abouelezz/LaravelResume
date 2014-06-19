@@ -37,7 +37,8 @@
 
 <!-- Skin -->
 <link type="text/css" rel="stylesheet" href="{{{asset('css/skin.css')}}}" media="">
-<!-- LESS.js -->
+
+<link href="{{{asset('css/style-responsive.css')}}}" rel="stylesheet" media="">
 
 <script src="{{{asset('js/scripts.js')}}}"></script>
 

@@ -93,9 +93,4 @@ body {
   background-color: #005580;
   border-color: #005580;
 }
-@media screen and (max-width: 767px) {
-  .section .section-title {
-    border-bottom: 5px solid #005580;
-    border-top: 5px solid #005580;
-  }
-}
+
