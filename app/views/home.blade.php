@@ -4,15 +4,6 @@
 	<meta charset="utf-8">
 	<title>{{{$name}}} | {{{$job}}}</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<!-- jQuery -->
-	<script src="{{{asset('js/jquery.min.js')}}}"></script><!-- local jquery -->
-	<!--
-	online version of jquery
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
--->
-
 <!-- Bootstrap -->
 <link href="{{{asset('bootstrap/css/bootstrap.css')}}}" rel="stylesheet" media="">
 <link href="{{{asset('bootstrap/css/bootstrap-responsive.min.css')}}}" rel="stylesheet" media="screen">
