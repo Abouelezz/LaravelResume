@@ -67,19 +67,19 @@
 
 			<div class="row">
 				<div class="infoline span12 "><div class="row">
-					<div class="span2 muted">Date of birth</div>
+					<div class="span3 muted">Date of birth</div>
 					<div class="span7">{{{$dob}}}</div>
 				</div></div>
 				<span class="clear"></span>
 
 				<div class="infoline span12"><div class="row">
-					<div class="span2 muted">Place of Birth</div>
+					<div class="span3 muted">Place of Birth</div>
 					<div class="span7">{{{$pob}}}</div>
 				</div></div>
 				<span class="clear"></span>
 
 				<div class="infoline span12"><div class="row">
-					<div class="span2 muted">Nationallty</div>
+					<div class="span3 muted">Nationallty</div>
 					<div class="span7">
 						{{{$nationallty}}}
 					</div>
@@ -87,27 +87,26 @@
 				<span class="clear"></span>
 
 				<div class="infoline span12"><div class="row">
-					<div class="span2 muted">Lives in</div>
+					<div class="span3 muted">Lives in</div>
 					<div class="span7">{{{$livesin}}}</div>
 				</div></div>
 				<span class="clear"></span>
 
 				<div class="infoline span12"><div class="row">
-					<div class="span2 muted">Mobile Number (Egypt)</div>
+					<div class="span3 muted">Mobile Number (Egypt)</div>
 					<div class="span7">{{{$phone_egypt}}}</div>
 				</div></div>
 				<span class="clear"></span>
 
 
 				<div class="infoline span12"><div class="row">
-					<div class="span2 muted">Mobile Number (UAE)</div>
+					<div class="span3 muted">Mobile Number (UAE)</div>
 					<div class="span7">{{{$phone_uae}}}</div>
 				</div></div>
 				<span class="clear"></span>
 
 			</div>
 		</div><!--/section-->
-		<span class="clear" style="page-break-after:always;"></span>
 
 		<div class="section" id="employment">
 			<h2 class="section-title"><span class="glyphicons share_alt"><i></i></span>Employment<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
