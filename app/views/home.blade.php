@@ -19,6 +19,9 @@
 <!-- Skin -->
 <link type="text/css" rel="stylesheet" href="{{{asset('css/skin.css')}}}" media="">
 
+	<!-- PRINT CSS -->
+	<link type="text/css" rel="stylesheet" href="{{{asset('css/print.css')}}}" media="">
+
 
 </head>
 
