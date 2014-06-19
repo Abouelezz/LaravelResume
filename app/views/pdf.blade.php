@@ -21,6 +21,9 @@
 		.label{
 			color: #fff !important;
 		}
+		.section{
+			margin-top:20px !important;
+		}
 	</style>
 </head>
 
@@ -168,17 +171,20 @@
 		<div class="section" id="testimonials">
 			<h2 class="section-title"><span class="glyphicons comments"><i></i></span>Testimonials<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
 			@foreach ($testimonials as $testimonial)
-			<div class="testimonial">
-				<div class="media">
+
+				<div class="row">
+					<div class="span1">
 					@if($testimonial->photo)<img style="width:100px;" class="media-object pull-left img-rounded" src="{{{$testimonial->photo}}}" alt="">@endif
-					<div class="media-body">
+					</div>
+					<div class="span10">
 						<blockquote>
 							<p>{{{$testimonial->word}}}</p>
 							<small><a href="#" title="">{{{$testimonial->name}}}</a></small>
 						</blockquote>
 					</div>
 				</div>
-			</div>
+
+			<span class="clear"></span>
 			@endforeach
 
 		</div><!--/section-->
@@ -205,7 +211,6 @@
 
 		</div><!--/section-->
 
-		<span class="clear"></span>
 		<div class="section hobbies" id="hobbies">
 			<h2 class="section-title"><span class="glyphicons heart_empty"><i></i></span>Hobbies<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
 			<span class="clear"></span>
@@ -214,20 +219,6 @@
 			@endforeach
 
 		</div><!--/section-->
-
-		<div id="footer">
-			<p>&copy; Ahmed Abouelezz - {{{date('Y')}}}</p>
-		</div>
-
 	</div><!--/.container-->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-52043013-1', 'ahmedabdellatif.com');
-		ga('send', 'pageview');
-	</script>
 </body>
 </html>
