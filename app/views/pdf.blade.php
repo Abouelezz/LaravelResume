@@ -14,7 +14,6 @@
 
 <style type="text/css">
 	{{file_get_contents(asset('bootstrap/css/bootstrap.css'))}}
-	{{file_get_contents(asset('bootstrap/css/bootstrap-responsive.min.css'))}}
 	{{file_get_contents('http://fonts.googleapis.com/css?family=Belleza')}}
 	{{file_get_contents(asset('css/style.css'))}}
 	{{file_get_contents(asset('css/skin.css'))}}
