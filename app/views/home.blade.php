@@ -6,7 +6,6 @@
 
 <!-- Bootstrap -->
 <link href="{{{asset('bootstrap/css/bootstrap.css')}}}" rel="stylesheet" media="">
-<link href="{{{asset('bootstrap/css/bootstrap-responsive.min.css')}}}" rel="stylesheet" media="screen">
 
 <!-- Glyphicons -->
 <link href="{{{asset('css/glyphicons.css')}}}" rel="stylesheet" media="">
