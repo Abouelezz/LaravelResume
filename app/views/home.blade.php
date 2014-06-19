@@ -126,7 +126,7 @@
 
 
 
-					<div class="well">
+					<div class="well" style="background-color:#eee;">
 						<p class="lead">{{nl2br($summary)}}</p>
 					</div>
 
