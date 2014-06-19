@@ -77,7 +77,7 @@
 						<li><a href="#testimonials" class="scroller">Testimonials</a></li>
 						<li><a href="#projects" class="scroller">Portfolio</a></li>
 						<li><a href="#hobbies" class="scroller">Hobbies</a></li>
-						<li><a href="#contact" class="scroller">Contact</a></li>
+						{{--<li><a href="#contact" class="scroller">Contact</a></li>--}}
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -100,7 +100,7 @@
 						<li><a href="#testimonials" class="scroller">Testimonials</a></li>
 						<li><a href="#projects" class="scroller">Projects</a></li>
 						<li><a href="#hobbies" class="scroller">Hobbies</a></li>
-						<li><a href="#contact" class="scroller">Contact</a></li>
+						{{--<li><a href="#contact" class="scroller">Contact</a></li>--}}
 					</ul>
 				</div><!--/sidebar-nav -->
 				<span class="clear"></span>
@@ -168,13 +168,13 @@
 						</div></div>
 						<span class="clear"></span>
 
-						<div class="infoline span9 last"><div class="row">
+						<div class="infoline span9 "><div class="row">
 							<div class="span2 muted">Lives in</div>
 							<div class="span7">{{{$livesin}}}</div>
 						</div></div>
 						<span class="clear"></span>
 
-						<div class="infoline span9 last"><div class="row">
+						<div class="infoline span9 "><div class="row">
 							<div class="span2 muted">Mobile Number (Egypt)</div>
 							<div class="span7">{{{$phone_egypt}}}</div>
 						</div></div>
