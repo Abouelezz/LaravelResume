@@ -7,22 +7,6 @@
 <!-- Bootstrap -->
 <link href="{{{asset('bootstrap/css/bootstrap.css')}}}" rel="stylesheet" media="">
 
-<!-- Glyphicons -->
-<link href="{{{asset('css/glyphicons.css')}}}" rel="stylesheet" media="">
-
-
-
-<!-- Theme -->
-<link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
-<link href="{{{asset('css/style.css')}}}" rel="stylesheet" media="">
-
-<!-- Skin -->
-<link type="text/css" rel="stylesheet" href="{{{asset('css/skin.css')}}}" media="">
-
-	<!-- PRINT CSS -->
-	<link type="text/css" rel="stylesheet" href="{{{asset('css/print.css')}}}" media="">
-
-
 </head>
 
 <body class="backgrounded" data-spy="scroll" data-target=".sidebar-nav">
