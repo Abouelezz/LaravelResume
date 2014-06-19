@@ -18,6 +18,9 @@
 		{{file_get_contents(asset('css/style.css'))}}
 		{{file_get_contents(asset('css/skin.css'))}}
 		{{file_get_contents(asset('css/print.css'))}}
+		.label{
+			color: #fff !important;
+		}
 	</style>
 </head>
 
@@ -63,19 +66,19 @@
 			<h2 class="section-title"><span class="glyphicons user"><i></i></span>Personal Information<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
 
 			<div class="row">
-				<div class="infoline span9 "><div class="row">
+				<div class="infoline span12 "><div class="row">
 					<div class="span2 muted">Date of birth</div>
 					<div class="span7">{{{$dob}}}</div>
 				</div></div>
 				<span class="clear"></span>
 
-				<div class="infoline span9"><div class="row">
+				<div class="infoline span12"><div class="row">
 					<div class="span2 muted">Place of Birth</div>
 					<div class="span7">{{{$pob}}}</div>
 				</div></div>
 				<span class="clear"></span>
 
-				<div class="infoline span9"><div class="row">
+				<div class="infoline span12"><div class="row">
 					<div class="span2 muted">Nationallty</div>
 					<div class="span7">
 						{{{$nationallty}}}
@@ -83,20 +86,20 @@
 				</div></div>
 				<span class="clear"></span>
 
-				<div class="infoline span9 "><div class="row">
+				<div class="infoline span12"><div class="row">
 					<div class="span2 muted">Lives in</div>
 					<div class="span7">{{{$livesin}}}</div>
 				</div></div>
 				<span class="clear"></span>
 
-				<div class="infoline span9 "><div class="row">
+				<div class="infoline span12"><div class="row">
 					<div class="span2 muted">Mobile Number (Egypt)</div>
 					<div class="span7">{{{$phone_egypt}}}</div>
 				</div></div>
 				<span class="clear"></span>
 
 
-				<div class="infoline span9 "><div class="row">
+				<div class="infoline span12"><div class="row">
 					<div class="span2 muted">Mobile Number (UAE)</div>
 					<div class="span7">{{{$phone_uae}}}</div>
 				</div></div>
