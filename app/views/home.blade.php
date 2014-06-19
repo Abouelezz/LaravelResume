@@ -28,7 +28,11 @@
 
 
 <script src="{{{asset('js/klass.min.js')}}}"></script>
-
+<style type="text/css">
+	.well{
+		background-color: #eee;
+	}
+</style>
 
 
 <!-- Theme -->
