@@ -16,18 +16,9 @@
 <!-- Bootstrap -->
 <link href="{{{asset('bootstrap/css/bootstrap.css')}}}" rel="stylesheet" media="">
 <link href="{{{asset('bootstrap/css/bootstrap-responsive.min.css')}}}" rel="stylesheet" media="screen">
-<script src="{{{asset('bootstrap/js/bootstrap.min.js')}}}"></script>
 
 <!-- Glyphicons -->
 <link href="{{{asset('css/glyphicons.css')}}}" rel="stylesheet" media="">
-
-<!-- Plugins -->
-<script src="{{{asset('js/jquery.easing.1.3.js')}}}"></script>
-<script src="{{{asset('js/jquery.isotope.min.js')}}}"></script>
-<script src="{{{asset('js/jquery.ba-resize.min.js')}}}"></script>
-
-
-<script src="{{{asset('js/klass.min.js')}}}"></script>
 
 
 
@@ -37,19 +28,6 @@
 
 <!-- Skin -->
 <link type="text/css" rel="stylesheet" href="{{{asset('css/skin.css')}}}" media="">
-<!-- LESS.js -->
-<style>
-.well {
-	background-color:#eee;
-}
-</style>
-<script src="{{{asset('js/scripts.js')}}}"></script>
-
-
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="./css/ie.css" />
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 
 	<!-- PRINT CSS -->
 	<link type="text/css" rel="stylesheet" href="{{{asset('css/print.css')}}}" media="print">
