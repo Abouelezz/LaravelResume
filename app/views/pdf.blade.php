@@ -6,103 +6,26 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- jQuery -->
-	<script src="{{{asset('js/jquery.min.js')}}}"></script><!-- local jquery -->
-	<!--
-	online version of jquery
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
--->
 
-<!-- Bootstrap -->
-<link href="{{{asset('bootstrap/css/bootstrap.css')}}}" rel="stylesheet" media="">
-<link href="{{{asset('bootstrap/css/bootstrap-responsive.min.css')}}}" rel="stylesheet" media="screen">
-<script src="{{{asset('bootstrap/js/bootstrap.min.js')}}}"></script>
+
 
 <!-- Glyphicons -->
 <link href="{{{asset('css/glyphicons.css')}}}" rel="stylesheet" media="">
 
-<!-- Plugins -->
-<script src="{{{asset('js/jquery.easing.1.3.js')}}}"></script>
-<script src="{{{asset('js/jquery.isotope.min.js')}}}"></script>
-<script src="{{{asset('js/jquery.ba-resize.min.js')}}}"></script>
-
-
-<script src="{{{asset('js/klass.min.js')}}}"></script>
-
-
-
-<!-- Theme -->
-<link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
-<link href="{{{asset('css/style.css')}}}" rel="stylesheet" media="">
-
-<!-- Skin -->
-<link type="text/css" rel="stylesheet" href="{{{asset('css/skin.css')}}}" media="">
-<!-- LESS.js -->
-
-<script src="{{{asset('js/scripts.js')}}}"></script>
-
-
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="./css/ie.css" />
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- PRINT CSS -->
-	<link type="text/css" rel="stylesheet" href="{{{asset('css/print.css')}}}" media="print">
-
-
+<style type="text/css">
+	{{file_get_contents(asset('bootstrap/css/bootstrap.css'))}}
+	{{file_get_contents(asset('bootstrap/css/bootstrap-responsive.min.css'))}}
+	{{file_get_contents('http://fonts.googleapis.com/css?family=Belleza')}}
+	{{file_get_contents(asset('css/style.css'))}}
+	{{file_get_contents(asset('css/skin.css'))}}
+	{{file_get_contents(asset('css/print.css'))}}
+</style>
 </head>
 
 <body class="backgrounded" data-spy="scroll" data-target=".sidebar-nav">
 
-	<div class="navbar navbar-inverse navbar-fixed-top visible-phone noprint " id="phone-navbar">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
-				<a class="brand" href="#">{{{$name}}}</a>
-				<div class="nav-collapse collapse">
-					<ul class="nav">
-						<li><a href="#about-me" class="scroller">About me</a></li>
-						<li><a href="#personal-information" class="scroller">Personal Info</a></li>
-						<li><a href="#employment" class="scroller">Employment</a></li>
-						<li><a href="#education" class="scroller">Education</a></li>
-						<li><a href="#skills" class="scroller">Skills</a></li>
-						<li><a href="#testimonials" class="scroller">Testimonials</a></li>
-						<li><a href="#projects" class="scroller">Portfolio</a></li>
-						<li><a href="#hobbies" class="scroller">Hobbies</a></li>
-						{{--<li><a href="#contact" class="scroller">Contact</a></li>--}}
-					</ul>
-				</div><!--/.nav-collapse -->
-			</div>
-		</div>
-	</div><!--/#phone-navbar -->
-
 	<div class="container">
 		<div class="row" id="content">
-
-
-
-			<div class="span3 sbleft noprint" id="sidebar">
-				<div class="sidebar-nav equal hidden-phone">
-					<ul class="nav nav-list affix" id="resumenav">
-						<li><a href="#about-me" class="scroller">About me</a></li>
-						<li><a href="#personal-information" class="scroller">Personal Info</a></li>
-						<li><a href="#employment" class="scroller">Employment</a></li>
-						<li><a href="#education" class="scroller">Education</a></li>
-						<li><a href="#skills" class="scroller">Skills</a></li>
-						<li><a href="#testimonials" class="scroller">Testimonials</a></li>
-						<li><a href="#projects" class="scroller">Projects</a></li>
-						<li><a href="#hobbies" class="scroller">Hobbies</a></li>
-						{{--<li><a href="#contact" class="scroller">Contact</a></li>--}}
-					</ul>
-				</div><!--/sidebar-nav -->
-				<span class="clear"></span>
-			</div><!--/span3 -->
-
 
 			<!-- MAIN CONTENT -->
 			<div class="span9 equal" id="main-content">
