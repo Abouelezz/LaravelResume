@@ -38,7 +38,11 @@
 <!-- Skin -->
 <link type="text/css" rel="stylesheet" href="{{{asset('css/skin.css')}}}" media="">
 <!-- LESS.js -->
-
+<style>
+.well {
+	background-color:#eee;
+}
+</style>
 <script src="{{{asset('js/scripts.js')}}}"></script>
 
 
@@ -126,7 +130,7 @@
 
 
 
-					<div class="well" style="background-color:#eee;">
+					<div class="well">
 						<p class="lead">{{nl2br($summary)}}</p>
 					</div>
 
