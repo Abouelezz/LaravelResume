@@ -107,6 +107,7 @@
 
 			</div>
 		</div><!--/section-->
+		<span class="clear" style="page-break-after:always;"></span>
 
 		<div class="section" id="employment">
 			<h2 class="section-title"><span class="glyphicons share_alt"><i></i></span>Employment<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
