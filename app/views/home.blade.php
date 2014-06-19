@@ -110,7 +110,7 @@
 
 				<div class="tools noprint visible-desktop">
 					<a href="javascript:if(window.print)window.print()" title="Print" data-placement="bottom" class="tips glyphicons print"><i></i></a>
-					<a href="#" title="Download" data-placement="bottom" class="tips glyphicons file_import"><i></i></a>
+					<a href="{{{URL::to('download')}}}" title="Download" data-placement="bottom" class="tips glyphicons file_import"><i></i></a>
 				</div>
 
 

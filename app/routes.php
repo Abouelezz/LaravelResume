@@ -13,3 +13,4 @@
 
 Route::get('/', 'HomeController@showWelcome');
 Route::get('/pdf', 'HomeController@showPDF');
+Route::get('/download', 'HomeController@download');

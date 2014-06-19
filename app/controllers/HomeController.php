@@ -63,4 +63,9 @@ class HomeController extends BaseController {
 		return View::make('pdf',$data);
 	}
 
+	public function download(){
+		exec('wkhtmltopdf -l -T 0 -B 5 -R 5 -L 5 http://ahmedabdellatif.com/pdf files/Ahmed-Abouelezz.pdf');
+		return Redirect::to('files/Ahmed-Abouelezz.pdf');
+	}
+
 }
