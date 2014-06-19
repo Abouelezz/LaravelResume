@@ -14,8 +14,12 @@
 -->
 
 <!-- Bootstrap -->
-<link href="{{{asset('bootstrap/css/bootstrap.css')}}}" rel="stylesheet" media="">
-<link href="{{{asset('bootstrap/css/bootstrap-responsive.min.css')}}}" rel="stylesheet" media="screen">
+<style>
+{{file_get_contents(asset('bootstrap/css/bootstrap.css'))}}
+</style>
+<style>
+{{file_get_contents(asset('bootstrap/css/bootstrap-responsive.min.css'))}}
+</style>
 <script src="{{{asset('bootstrap/js/bootstrap.min.js')}}}"></script>
 
 <!-- Glyphicons -->
@@ -33,7 +37,9 @@
 
 <!-- Theme -->
 <link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
-<link href="{{{asset('css/style.css')}}}" rel="stylesheet" media="">
+<style>
+{{file_get_contents(asset('css/style.css'))}}
+</style>
 
 <!-- Skin -->
 <link type="text/css" rel="stylesheet/less" href="{{{asset('css/skin.less')}}}" media="">
