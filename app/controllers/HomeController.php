@@ -65,7 +65,7 @@ class HomeController extends BaseController {
 
 	public function download(){
 		exec('wkhtmltopdf -l -T 0 -B 5 -R 5 -L 5 http://ahmedabdellatif.com/pdf /var/www/LaravelResume/public/files/Ahmed-Abouelezz.pdf');
-		return Redirect::to('files/Ahmed-Abouelezz.pdf');
+		return Response::download('files/Ahmed-Abouelezz.pdf');
 	}
 
 }
