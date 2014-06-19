@@ -28,11 +28,7 @@
 
 
 <script src="{{{asset('js/klass.min.js')}}}"></script>
-<style type="text/css">
-	.well{
-		background-color: #eee;
-	}
-</style>
+
 
 
 <!-- Theme -->
@@ -46,13 +42,6 @@
 <script src="{{{asset('js/scripts.js')}}}"></script>
 
 
-	<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="./css/ie.css" />
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-
-	<!-- PRINT CSS -->
-	<link type="text/css" rel="stylesheet" href="{{{asset('css/print.css')}}}" media="print">
 
 
 </head>
