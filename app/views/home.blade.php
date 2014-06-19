@@ -26,12 +26,10 @@
 <script src="{{{asset('js/jquery.isotope.min.js')}}}"></script>
 <script src="{{{asset('js/jquery.ba-resize.min.js')}}}"></script>
 
-<link href="{{{asset('css/prettyPhoto.css')}}}" rel="stylesheet" media="">
-<script src="{{{asset('js/jquery.prettyPhoto.js')}}}"></script>
 
 <script src="{{{asset('js/klass.min.js')}}}"></script>
-<script src="{{{asset('js/code.photoswipe.jquery-3.0.4.min.js')}}}"></script>
-<link href="{{{asset('css/photoswipe.css')}}}" rel="stylesheet" media="screen">
+
+
 
 <!-- Theme -->
 <link href='http://fonts.googleapis.com/css?family=Belleza' rel='stylesheet' type='text/css'>
