@@ -220,8 +220,8 @@
 
 		</div><!--/section-->
 		<!--/Contact Section, For print&pdf only-->
-				<div class="section contact-info" id="personal-information">
-					<h2 class="section-title"><span class="glyphicons user"><i></i></span>Contact Me<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
+				<div class="section" id="contact-information">
+					<h2 class="section-title"><span class="glyphicons user"><i></i></span>Contact Me</h2>
 
 					<div class="row">
 						<div class="infoline span9 first"><div class="row">
