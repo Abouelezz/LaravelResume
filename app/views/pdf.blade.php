@@ -219,6 +219,42 @@
 			@endforeach
 
 		</div><!--/section-->
+		<!--/Contact Section, For print&pdf only-->
+				<div class="section contact-info" id="personal-information">
+					<h2 class="section-title"><span class="glyphicons user"><i></i></span>Contact Me<a href="#phone-navbar" class="top visible-phone"><span class="glyphicons white up_arrow"><i></i></span></a></h2>
+
+					<div class="row">
+						<div class="infoline span9 first"><div class="row">
+							<div class="span2 muted"><span class="glyphicons linked_in"><i></i></span> Linkedin</div>
+							<div class="span7"><a href="{{{$linkedin}}}">{{{$linkedin}}}</a></div>
+						</div></div>
+						<span class="clear"></span>
+
+						<div class="infoline span9 first"><div class="row">
+							<div class="span2 muted right"><span class="glyphicons facebook"><i></i></span>Facebook</div>
+							<div class="span7"><a href="{{{$facebook}}}">{{{$facebook}}}</a></div>
+						</div></div>
+						<span class="clear"></span>
+
+						<div class="infoline span9 first"><div class="row">
+							<div class="span2 muted"><span class="glyphicons github"><i></i></span>Github</div>
+							<div class="span7"><a href="{{{$github}}}">{{{$github}}}</a></div>
+						</div></div>
+						<span class="clear"></span>
+
+						<div class="infoline span9 first"><div class="row">
+							<div class="span2 muted"><span class="glyphicons twitter"><i></i></span>Twitter</div>
+							<div class="span7"><a href="https://twitter.com/{{{$twitter}}}">@{{{$twitter}}}</a></div>
+						</div></div>
+						<span class="clear"></span>
+						<div class="infoline span9 first"><div class="row">
+							<div class="span2 muted"><span class="glyphicons globe"><i></i></span>Online CV</div>
+							<div class="span7"><a href="{{{URL::to('/')}}}">{{{URL::to('/')}}}</a></div>
+						</div></div>
+						<span class="clear"></span>
+
+					</div>
+				</div><!--/section-->
 	</div><!--/.container-->
 </body>
 </html>

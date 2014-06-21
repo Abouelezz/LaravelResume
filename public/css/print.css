@@ -38,3 +38,6 @@ hr {border: none; border-bottom: 1px dotted #ddd;}
 .up_arrow{
 	display: none;
 }
+.noscreen {
+	display: block !important;
+}
