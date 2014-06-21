@@ -198,7 +198,8 @@ body.dark {color:#eee; background: #1b1b1b;}
       transition-property:         transform, opacity;
 }
 #contact-information .row .glyphicons{
-   display: inline;
+   display: block;
+   float: left;
 }
 @media screen{
 .noscreen {
